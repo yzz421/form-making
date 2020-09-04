@@ -1,0 +1,32 @@
+@import '~antd/es/style/themes/default.less';
+
+.left {
+  border: 1px solid @border-color-base;
+  width: 460px;
+  margin-right: 5px;
+  overflow: auto;
+}
+
+.center {
+  width: 100%;
+  border: 1px solid @border-color-base;
+}
+
+.right {
+  width: 480px;
+  border: 1px solid @border-color-base;
+  margin-left: 5px;
+  overflow: auto;
+}
+
+.header {
+  // color: hsla(0, 0%, 100%, 0.7);
+  // background-color: #24292e;
+  background-image: linear-gradient(90deg, #40a9ff, #e6f7ff);
+  height: 46px;
+  bottom: 1px solid @border-color-base;
+  margin-bottom: 12px;
+  color: whitesmoke;
+  align-items: center;
+  line-height: 46px;
+}

@@ -1,0 +1,45 @@
+@import '~antd/es/style/themes/default.less';
+
+.icon-drag {
+  font-size: 14px;
+  &::before {
+    content: '\E842';
+  }
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 2px;
+  border: 1px dashed rgba(236, 245, 255, 0.3);
+  position: relative;
+}
+
+.drag-view {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 0px;
+  top: 0px;
+  background: @primary-color;
+  line-height: 32px;
+  text-align: center;
+}
+
+.action-view {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: @primary-color;
+  height: 28px;
+  width: 50px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.contianer-active {
+  width: 100%;
+  margin-bottom: 2px;
+  position: relative;
+  border: 1px solid @primary-color !important;
+  outline: 1px solid @primary-color;
+}
