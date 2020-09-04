@@ -4,6 +4,7 @@ import { IConfig } from 'umi-types';
 const config: IConfig = {
   treeShaking: true,
   base: '/form-making/',
+  publicPath: '/form-making/',
   routes: [
     {
       path: '/',
