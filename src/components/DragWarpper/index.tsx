@@ -1,10 +1,7 @@
 import React from 'react';
 import styles from './index.less';
-import { Form } from '@ant-design/compatible';
 import '@ant-design/compatible/assets/index.css';
-
 import { observer } from 'mobx-react-lite';
-
 import { ItemTypes } from '@/contants';
 import { useDrag, useDrop } from 'react-dnd';
 
