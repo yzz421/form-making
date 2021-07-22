@@ -15,7 +15,8 @@
     "emitDecoratorMetadata": true,
     "paths": {
       "@/*": ["src/*"],
-      "@tmp/*": ["src/pages/.umi/*"]
+      "@tmp/*": ["src/pages/.umi/*"],
+      "@@/*": ["src/.umi/*"]
     },
     "allowSyntheticDefaultImports": true
   }

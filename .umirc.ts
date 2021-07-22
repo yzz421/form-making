@@ -1,8 +1,5 @@
-import { IConfig } from 'umi-types';
-
 // ref: https://umijs.org/config/
-const config: IConfig = {
-  treeShaking: true,
+const config = {
   base: '/form-making/',
   publicPath: '/form-making/',
   routes: [
@@ -12,22 +9,8 @@ const config: IConfig = {
       routes: [{ path: '/', component: '../pages/index' }],
     },
   ],
-  plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
-    [
-      'umi-plugin-react',
-      {
-        antd: true,
-        dva: false,
-        dynamicImport: false,
-        title: 'form-making',
-        dll: false,
-        routes: {
-          exclude: [/components\//],
-        },
-      },
-    ],
-  ],
+  dva: {},
+  antd: {},
 };
 
 export default config;
