@@ -4,7 +4,7 @@
  */
 import { extend, RequestOptionsInit } from 'umi-request';
 import { notification } from 'antd';
-import { router } from 'umi';
+import { history as router } from 'umi';
 
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
@@ -70,7 +70,7 @@ export const request = (url: string, options?: RequestOptionsInit) => {
 
     const boxingRes = boxingResponse(res);
     resolve(boxingRes);
-  }).catch(error => {
+  }).catch((error) => {
     throw error;
   });
 };

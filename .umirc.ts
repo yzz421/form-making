@@ -6,7 +6,10 @@ const config = {
     {
       path: '/',
       component: '../layouts/index',
-      routes: [{ path: '/', component: '../pages/index' }],
+      routes: [
+        { path: '/', component: '../pages/index' },
+        { path: '/render', component: '../pages/RenderTest' },
+      ],
     },
   ],
   dva: {},
